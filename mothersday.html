@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Mother's Day</title>
+
+<link rel ="stylesheet" href="./something.css">
+<script src = "./something.js"></script>
+
+</head>
+
+<body id = "body1">
+    <img src ="https://media2.giphy.com/media/iIKrdvt54McJa/source.gif" id = "1" style ="left: 10px;"class = "Balloon1" onclick="changeDiv(this.id)"></img>
+
+    <img src ="https://media2.giphy.com/media/iIKrdvt54McJa/source.gif" id = "2" style ="left: 198px;"class = "Balloon1" onclick="changeDiv(this.id)"></img>
+
+    <img src ="https://media2.giphy.com/media/iIKrdvt54McJa/source.gif" id = "3" style ="left: 391px;"class = "Balloon1" onclick="changeDiv(this.id)"></img>
+
+    <img src ="https://media2.giphy.com/media/iIKrdvt54McJa/source.gif" id = "4" style ="left: 584px;"class = "Balloon1" onclick="changeDiv(this.id)"></img>
+
+    <img src ="https://media2.giphy.com/media/iIKrdvt54McJa/source.gif" id = "5" style ="left: 777px;"class = "Balloon1" onclick="changeDiv(this.id)"></img>
+
+    <img src ="https://media2.giphy.com/media/iIKrdvt54McJa/source.gif" id = "6" style ="left: 980px;"class = "Balloon1" onclick="changeDiv(this.id)"></img>
+
+    <img src ="https://media2.giphy.com/media/iIKrdvt54McJa/source.gif" id = "7" style ="left: 1152px;"class = "Balloon1" onclick="changeDiv(this.id)"></img>
+
+    <p id = "p"></p>
+
+    <audio id="song" src="StarWars.mp3" >
+    	
+    </audio>
+
+<script type="text/javascript">
+	var x = 0;
+	var whatever = document.getElementById("song");
+
+document.addEventListener("click", function(){
+    
+    x = x+1;
+    if(x%2==0){
+    	whatever.pause()
+    }
+    else if (x%2==1){
+    	whatever.play()
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
+
+

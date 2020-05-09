@@ -1,0 +1,33 @@
+.Balloon1 {
+    height: 140px;
+    width: auto;
+    position: absolute;
+    transition: 3s;
+    top: 85vh;
+    padding-left:40px;
+    padding-right:40px;
+}
+.Balloon2 {
+    height: 140px;
+    width: auto;
+    position: absolute;
+    transition: 3s;
+    top: 0vh;
+    padding-left:40px;
+    padding-right:40px;
+}
+body {
+    background: black;
+    background-repeat: repeat-x;
+    background-image: url(https://www.medwayyachtclub.com/wp-content/uploads/2019/10/1410010_e1288-2.gif); /*big fireworks*/
+    background-position-y: 10vh;
+
+    background-position-x: center;
+}
+#p {
+    font-size: 37px;
+    color: pink;
+    position: absolute;
+    left: 35vw;
+    top: 50vh;
+}
