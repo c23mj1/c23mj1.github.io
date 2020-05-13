@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Animals</title>
+</head>
+<body>
+<p><br></p>
+<h1><center>Click below...</center></h1>
+
+<div id="day"> </div>
+
+
+<style type="text/css">
+	
+#day {
+	width: 400px;
+	height: 400px;
+	background-color: lightpink;
+	background-image: url("https://i.pinimg.com/originals/fc/41/d0/fc41d0e800af66b9c78aeea803d4d2d1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 130px;
+	left: 440px;
+
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+	var day = document.getElementById("day");
+
+
+animalsArray= ["url(https://lh3.googleusercontent.com/proxy/F0RESp5NL3IyxgAtqJ8j6jLMUJ4Jh55oDswqp2kNSL6t9aZGw9BlKttcDiJ844iE6xOe9pwZHJSeigjXZwQ6zkGumL1_tpue5KJZ0WbkpUl9H81LZyLaYoxZY5AWEtUo1e1qVpXPYGa5xUfCAjNByf3iaDJzXHa0LORA3IR28MbOzhpE8GEY)", "url(https://www.pinclipart.com/picdir/big/332-3321169_winking-nerdy-fox-kawaii-cute-animals-cartoon-clipart.png)", "url(https://www.pinclipart.com/picdir/big/391-3919617_naomilord-fox-silverfox-animal-fox-cute-kawaii-kawaii.png)", "url(https://cdn.clipart.email/b99e19cbc332219806bd750ff82e82dd_sticker-png-kawaii-transparent-background-cute-sticker-png-_890-992.png)", "url(https://webstockreview.net/images/clipart-octopus-kawaii-7.png)", "url(https://i.ya-webdesign.com/images/kawaii-clipart-whale-12.png)", "url(https://www.jing.fm/clipimg/full/6-63786_snake-clipart-image-cartoon-transparent-background-snake-transparent.png)"]
+
+	
+	
+	day.addEventListener("click", function() {
+
+	console.log("Hey");
+	Math.round(Math.random() * 4)
+	day.style.backgroundImage = animalsArray[Math.round(Math.random() * 4)];
+
+})
+	
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
